@@ -42,7 +42,7 @@ spec:
       targetPort: https
       nodePort: 30016
       protocol: TCP
-
+      name: management-https
   selector:
     deployment: {{ template "am-pattern-3.resource.prefix" . }}-mi
     node: {{ template "am-pattern-3.resource.prefix" . }}-mi-1
