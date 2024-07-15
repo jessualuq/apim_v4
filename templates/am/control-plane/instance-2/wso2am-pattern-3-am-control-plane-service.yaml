@@ -19,6 +19,7 @@ metadata:
   namespace : {{ .Release.Namespace }}
 spec:
   # label keys and values that must match in order to receive traffic for this service
+  type: NodePort
   selector:
     deployment: {{ template "am-pattern-3.resource.prefix" . }}-am-cp
     node: {{ template "am-pattern-3.resource.prefix" . }}-am-cp-2
