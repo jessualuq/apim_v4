@@ -18,7 +18,6 @@ metadata:
   name: {{ template "am-pattern-3.resource.prefix" . }}-am-cp-1-service
   namespace : {{ .Release.Namespace }}
 spec:
-  type: NodePort
   # label keys and values that must match in order to receive traffic for this service
   selector:
     deployment: {{ template "am-pattern-3.resource.prefix" . }}-am-cp
@@ -37,5 +36,3 @@ spec:
     - name: servlet-https
       protocol: TCP
       port: 9443
-      nodePort: 30011
-      targetPort: https
