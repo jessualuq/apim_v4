@@ -25,22 +25,22 @@ spec:
   ports:
     - port: 8290      
       protocol: TCP
-      nodePort: 30013
+      nodePort: 30010
       targetPort: http
       name: pass-through-http
     - port: 8253
       targetPort: https
       protocol: TCP
-      nodePort: 30014
+      nodePort: 30011
       name: pass-through-https
     - port: 9201
       targetPort: http
       protocol: TCP
-      nodePort: 30015
+      nodePort: 30012
       name: metrics
     - port: 9164
       targetPort: https
-      nodePort: 30016
+      nodePort: 30013
       protocol: TCP
       name: management-https
   selector:
