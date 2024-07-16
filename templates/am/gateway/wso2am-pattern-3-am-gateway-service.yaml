@@ -47,20 +47,20 @@ spec:
     - name: websub-http
       protocol: TCP
       port: 9021
-      nodePort: 30005
+      nodePort: 30007
       targetPort: http
     - name: websub-https
       protocol: TCP
       port: 8021
-      nodePort: 30007
+      nodePort: 30008
       targetPort: https
     - name: websocket-http
       protocol: TCP
       port: 9099
-      nodePort: 30008
+      nodePort: 30009
       targetPort: http
     - name: websocket-https
       protocol: TCP
       port: 8099
-      nodePort: 30009
+      nodePort: 30010
       targetPort: https
